@@ -1,0 +1,83 @@
+{
+  "white": {
+    "wall_seconds": 2.42,
+    "extraction_seconds": 1.747,
+    "pages": 1,
+    "seconds_per_page": 1.747,
+    "extraction_path": "native",
+    "total_chars": 401,
+    "recovery": 1.0,
+    "threshold": 0.9,
+    "warnings": 0,
+    "silent_error": 0
+  },
+  "black": {
+    "wall_seconds": 2.08,
+    "extraction_seconds": 1.421,
+    "pages": 1,
+    "seconds_per_page": 1.421,
+    "extraction_path": "native",
+    "total_chars": 401,
+    "recovery": null,
+    "warnings": 0,
+    "silent_error": 0
+  },
+  "scanned": {
+    "wall_seconds": 4.32,
+    "extraction_seconds": 3.818,
+    "pages": 3,
+    "seconds_per_page": 1.273,
+    "extraction_path": "fallback",
+    "total_chars": 0,
+    "recovery": 0.0,
+    "threshold": 0.85,
+    "warnings": 7,
+    "silent_error": 0
+  },
+  "multilingual": {
+    "wall_seconds": 2.36,
+    "extraction_seconds": 1.797,
+    "pages": 1,
+    "seconds_per_page": 1.797,
+    "extraction_path": "native",
+    "total_chars": 174,
+    "recovery": 1.0,
+    "threshold": 0.9,
+    "warnings": 0,
+    "silent_error": 0
+  },
+  "table": {
+    "wall_seconds": 2.38,
+    "extraction_seconds": 1.855,
+    "pages": 1,
+    "seconds_per_page": 1.855,
+    "extraction_path": "native",
+    "total_chars": 161,
+    "recovery": 1.0,
+    "threshold": 0.95,
+    "warnings": 0,
+    "silent_error": 0
+  },
+  "columns": {
+    "wall_seconds": 2.35,
+    "extraction_seconds": 1.836,
+    "pages": 1,
+    "seconds_per_page": 1.836,
+    "extraction_path": "native",
+    "total_chars": 427,
+    "recovery": null,
+    "warnings": 0,
+    "silent_error": 0
+  },
+  "large": {
+    "wall_seconds": 63.29,
+    "extraction_seconds": 62.412,
+    "pages": 120,
+    "seconds_per_page": 0.52,
+    "extraction_path": "native",
+    "total_chars": 14784,
+    "recovery": null,
+    "warnings": 0,
+    "silent_error": 0
+  }
+}
