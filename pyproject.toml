@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pdf-slice"
+version = "1.1.0"
+description = "PDF to clean markdown that never silently returns wrong content"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "pymupdf",
+    "pytesseract",
+    "pillow",
+    "mcp<2",  # FastMCP API; v2 renamed it to MCPServer
+]
+
+[project.scripts]
+pdf-slice = "extract:main"
+pdf-slice-mcp = "mcp_server:main"
+
+[project.optional-dependencies]
+test = [
+    "reportlab",
+    "arabic-reshaper",
+    "python-bidi",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["extract.py", "mcp_server.py"]

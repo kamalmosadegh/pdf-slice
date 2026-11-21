@@ -1,0 +1,5 @@
+# Runtime dependencies — light, CPU-only, no GPU models.
+pymupdf==2.1
+pytesseract==0.3.13
+pillow==13.0.0
+mcp<2  # FastMCP API; MCP SDK v2 renamed it to MCPServer

@@ -1,0 +1,7 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+dist/
+tests/last_run.log
+.cache/
