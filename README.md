@@ -176,4 +176,3 @@ Head-to-head against Microsoft MarkItDown 0.1.9 on this repo's own test fixtures
 - **English + Persian:** MarkItDown returned the Persian lines in reversed (visual) order; pdf-slice kept the correct logical reading order.
 
 Honestly: MarkItDown was faster on every fixture, the two-column test was a tie, and its merged-cell table output was arguably cleaner. pdf-slice's edge is not speed — it is that failure never passes silently.
----
