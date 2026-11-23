@@ -164,3 +164,16 @@ and a fast native path, not heavyweight modelling.
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+
+---
+## How it compares
+
+Head-to-head against Microsoft MarkItDown 0.1.9 on this repo's own test fixtures (23 Nov 2026, full method and numbers: https://dev.to/kamalmosadegh/markitdown-returned-an-empty-file-for-my-scanned-pdf-so-i-benchmarked-it-against-a-tool-that-5b91):
+
+- **Scanned (image-only) PDF:** MarkItDown exited 0 with 0 characters and no warning. pdf-slice routed the pages to OCR and recovered the full text (699 chars).
+- **Simple table:** MarkItDown's output contained zero `|` characters — the grid did not survive. pdf-slice emitted a proper Markdown table.
+- **English + Persian:** MarkItDown returned the Persian lines in reversed (visual) order; pdf-slice kept the correct logical reading order.
+
+Honestly: MarkItDown was faster on every fixture, the two-column test was a tie, and its merged-cell table output was arguably cleaner. pdf-slice's edge is not speed — it is that failure never passes silently.
+---
