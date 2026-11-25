@@ -5,6 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![MCP server](https://img.shields.io/badge/MCP-server-purple.svg)](#mcp-server--agent-skill)
+[![M8ven Score](https://m8ven.ai/badge/mcp/kamalmosadegh-pdf-slice-sygq4y?v=33cc6431a91e5c70b91ddef3b9edc613)](https://m8ven.ai/mcp/kamalmosadegh-pdf-slice-sygq4y?s=readme)
 
 A small, local, CPU-only tool that converts a PDF (file or URL) to clean
 markdown — and is engineered around one rule: **if the output might be
