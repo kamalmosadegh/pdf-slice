@@ -108,10 +108,18 @@ def main(argv=None) -> int:
               "disabled; scanned/thin pages will return low-confidence "
               "output.", file=sys.stderr)
     from mcp.server.fastmcp import FastMCP
+    from mcp.types import ToolAnnotations
 
     mcp = FastMCP("pdf-slice")
 
-    @mcp.tool()
+    _READ_ONLY = ToolAnnotations(
+        readOnlyHint=True,
+        destructiveHint=False,
+        idempotentHint=True,
+        openWorldHint=True,
+    )
+
+    @mcp.tool(annotations=_READ_ONLY)
     def extract_pdf(source: str, ocr_lang: str = "eng") -> str:
         """Extract a PDF file or URL to clean markdown.
 
@@ -121,7 +129,7 @@ def main(argv=None) -> int:
         """
         return tool_extract_pdf(source, ocr_lang)
 
-    @mcp.tool()
+    @mcp.tool(annotations=_READ_ONLY)
     def verify_pdf(source: str, second_source: str) -> str:
         """Extract the same document from two routes (file/URL) and compare.
 
